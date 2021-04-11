@@ -1,0 +1,97 @@
+	body{
+		background-image: url("../img/bg.svg");
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+
+	.content{
+		margin: auto;
+
+		max-width: 700px;
+		background-color: white;
+		height: 100%;
+		border-radius: 10px;
+		padding: 2em;
+		padding-top: 1em;
+		font-family: Arial, sans-serif;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		/*text-align: center;*/
+	}
+
+	
+	button{
+		width: 100%;
+		height: 50px;
+		cursor: pointer;
+		font-size: 1.5em;
+		border-radius: 1em;
+		margin: 0.2em;
+		background: linear-gradient(90deg, rgba(161,95,63,1) 0%, rgba(208,151,87,1) 100%);
+		color: white;
+		border: none;
+	}
+
+
+	button:hover{
+		background: #C79E44;
+	}
+
+	button:active{
+		background: #f3cd7b;
+	}
+
+
+
+
+	.disclaimer{
+		color: gray;
+		text-align: center;
+		font-size: 0.8em;
+
+	}
+
+	.flexer{
+		display: flex;
+		justify-content: space-around;
+	}
+
+
+	img{
+		max-width:100%;
+		max-height:100%;
+		 -webkit-filter: grayscale(100%) opacity(50%);
+       		-moz-filter: grayscale(100%) opacity(50%);
+        	  -o-filter: grayscale(100%) opacity(50%);
+       		 -ms-filter: grayscale(100%) opacity(50%);
+       		     filter: grayscale(100%) opacity(50%); 
+       		     cursor: pointer;
+	}
+
+
+	input:checked + img {
+    -webkit-filter: grayscale(0%) opacity(100%);
+       -moz-filter: grayscale(0%) opacity(100%);
+         -o-filter: grayscale(0%) opacity(100%);
+        -ms-filter: grayscale(0%) opacity(100%);
+            filter: grayscale(0%) opacity(100%); 
+            cursor: pointer;
+            /*border: 5px solid #555;
+            border-radius: 6em;*/
+}
+
+textarea{
+	resize: none;
+}
+
+pre{
+	text-align: left;
+}
+
+fieldset{
+	border: none;
+}
+
+label{
+	text-align: center;
+}

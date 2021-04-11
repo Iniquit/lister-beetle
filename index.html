@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lister Beetle</title>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta content="Lister Beetle" property="og:title">
+    <meta content="A random decklist generator for MTG EDH" property="og:description">
+    <meta content='img/black.png' property='og:image'>
+        
+    <link rel="icon" type="image/png" href="img/black.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+
+
+</head>
+	<body>
+		<div class="content">
+			<h1>Lister Beetle</h1><p>A MTG random decklist generator for EDH by <a href="https://github.com/Iniquit">Iniquit</a>.</p>
+
+			<h2>My commander's colors are...</h2>
+			<fieldset class="flexer">
+				<label>
+					<input type="checkbox" id="white"> White <img src="img/white.png" alt="White">
+				</label>
+
+				<label>
+					<input type="checkbox" id="blue"> Blue <img src="img/blue.png" alt="Blue">
+				</label>
+
+				<label>
+					<input type="checkbox" id="black"> Black <img src="img/black.png" alt="Black">
+				</label>
+
+				<label>
+					<input type="checkbox" id="red"> Red <img src="img/red.png" alt="Red">
+				</label>
+
+				<label>
+					<input type="checkbox" id="green"> Green <img src="img/green.png" alt="Green">
+				</label>
+			</fieldset>
+
+			<p><span class="choose-number">Generate... <input type="number" id="generateNumber" min="1" max="100" value="64"></input> random spells.</span></p>
+			<!--<span class="lands">Lands: <input type="number" id="lands" min="1" max="100" value="64"></input></span>-->
+
+
+			<div class="count">0 cards</div>
+			<div class="button"><button onclick="RunReal()">Get random list</button></div>
+			<div class="button"><button onclick='copyTextFromElement("target")'>Copy decklist</button></div>
+			<pre class="target" id="target" style="white-space:pre"></pre>
+			<div class="disclaimer">This utility uses the <a href="https://scryfall.com/docs/api">Scryfall API</a> but is not endorsed by or affiliated with either Scryfall or Wizards of the Coast. Original card symbols copyright Wizards of the Coast, LLC, a subsidiary of Hasbro, Inc.</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="script.js"></script>
+
+</html>
