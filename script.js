@@ -31,7 +31,7 @@ function getCurrentColors() {
   if (document.getElementById('white').checked) identity += 'w';
   if (document.getElementById('blue').checked) identity += 'u';
   if (document.getElementById('black').checked) identity += 'b';
-  if (document.getElementById('red').checked) identity += 'b';
+  if (document.getElementById('red').checked) identity += 'r';
   if (document.getElementById('green').checked) identity += 'g';
   if (identity == '') identity = 'c';
 
