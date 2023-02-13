@@ -1,5 +1,5 @@
 async function getScryfallFull() {
-  return (await fetch('https://c2.scryfall.com/file/scryfall-bulk/oracle-cards/oracle-cards-20210411210506.json')).json();
+  return (await fetch('https://data.scryfall.io/oracle-cards/oracle-cards-20230212220312.json')).json();
 }
 
 function fitsColorIdentiy(arr){
